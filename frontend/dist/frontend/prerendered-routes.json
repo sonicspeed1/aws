@@ -1,0 +1,10 @@
+{
+  "routes": [
+    "/impuesto",
+    "/informacion",
+    "/login",
+    "/registro",
+    "/reporte",
+    "/usuario"
+  ]
+}

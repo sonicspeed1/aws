@@ -1,0 +1,9 @@
+<nav class="d-flex justify-content-around">
+  <a routerLink="/login" class="text-decoration-none nav-item mx-3 p-2" *ngIf="!isLoggedIn()">Login</a>
+  <a routerLink="/informacion" class="text-decoration-none nav-item mx-3 p-2" *ngIf="!isLoggedIn()">Información</a>
+  <a routerLink="/registro" class="text-decoration-none nav-item mx-3 p-2" *ngIf="isLoggedIn()">Registro de Facturas</a>
+  <a routerLink="/reporte" class="text-decoration-none nav-item mx-3 p-2" *ngIf="isLoggedIn()">Reporte</a>
+  <a routerLink="/impuesto" class="text-decoration-none nav-item mx-3 p-2" *ngIf="isLoggedIn()">Impuesto a la renta (2023)</a>
+  <a routerLink="/usuario" class="text-decoration-none nav-item mx-3 p-2" *ngIf="!isLoggedIn()">Registro</a>
+  <a class="text-decoration-none nav-item mx-3 p-2" (click)="logout()" *ngIf="isLoggedIn()">Cerrar Sesión</a>
+</nav>

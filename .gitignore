@@ -1,0 +1,10 @@
+node_modules/
+dist/
+
+# Ignorar archivos de configuración con secretos
+.env
+.env.local
+
+# Ignorar archivos de respaldo
+*.log
+*~
